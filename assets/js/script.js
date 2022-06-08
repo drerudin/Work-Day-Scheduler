@@ -5,12 +5,6 @@ $(document).ready(function () {
     displayDate.innerHTML = NowMoment;
     let currentHour = moment().format("HH");
   
-    // Button function to clear local storage and clear contents
-    $("#clearFieldsBtn").click(function (event) {
-      event.preventDefault;
-      $("textarea").val("");
-      localStorage.clear();
-    });
   
     //grabs hour from each time slot and compares it to actual time
     $(".time-div").each(function () {
